@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK API</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #007bff; /* Bright blue background */
+            color: white;
+        }
+        .accordion-button {
+            background-color: #ffffff; /* White for better contrast */
+            color: #000000; /* Black text for accordion buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Welcome to KK API</h1>
+        <p class="text-center">Explore the power of the KK API, including endpoints like /api/date!</p>
+
+        <!-- Accordion 1 -->
+        <div class="accordion" id="apiAccordion1">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDate1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate1" aria-expanded="false" aria-controls="collapseDate1">
+                        /api/date Endpoint
+                    </button>
+                </h2>
+                <div id="collapseDate1" class="accordion-collapse collapse" aria-labelledby="headingDate1" data-bs-parent="#apiAccordion1">
+                    <div class="accordion-body">
+                        <p>
+                            The <code>/api/date</code> endpoint returns the current date and time based on your timezone. Here's what you can expect:
+                        </p>
+                        <ul>
+                            <li><code>200:</code> Successfully retrieved the current date and time.</li>
+                            <li><code>500:</code> Failed to retrieve the date.</li>
+                            <li><code>429:</code> Too many requests (rate-limited).</li>
+                        </ul>
+
+                        <p>Try it out in your browser or using a tool like Postman!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Accordion 2 -->
+        <div class="accordion" id="apiAccordion2">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDate2">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate2" aria-expanded="false" aria-controls="collapseDate2">
+                        /api/request-method Endpoint
+                    </button>
+                </h2>
+                <div id="collapseDate2" class="accordion-collapse collapse" aria-labelledby="headingDate2" data-bs-parent="#apiAccordion2">
+                    <div class="accordion-body">
+                        <p>
+                            The <code>/api/request-method</code> endpoint returns which request method you used to get this JSON info. Here's what you can expect:
+                        </p>
+                        <ul>
+                            <li><code>200:</code> Successfully returned the request method.</li>
+                            <li><code>500:</code> (SOMEHOW) Failed to retrieve the request method.</li>
+                            <li><code>429:</code> Too many requests (rate-limited).</li>
+                        </ul>
+
+                        <p>Try it out in your browser or using a tool like Postman!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="accordion" id="apiAccordion3">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDate3">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate3" aria-expanded="false" aria-controls="collapseDate3">
+                        /api/parameter Endpoint
+                    </button>
+                </h2>
+                <div id="collapseDate3" class="accordion-collapse collapse" aria-labelledby="headingDate3" data-bs-parent="#apiAccordion3">
+                    <div class="accordion-body">
+                        <p>
+                            The <code>/api/parameter</code> endpoint requires a parameter, foo, that must be equal to bar. Here's what you can expect:
+                        </p>
+                        <ul>
+                            <li><code>200:</code> Successfully processed the parameter and returned a message.</li>
+                            <li><code>400:</code> You didn't provide the "foo" parameter.</li>
+                            <li><code>404:</code> You provided the parameter, but it doesn't equal "bar".</li>
+                            <li><code>429:</code> Too many requests (rate-limited).</li>
+                        </ul>
+
+                        <p>Try it out in your browser or using a tool like Postman!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="accordion" id="apiAccordion4">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDate4">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate4" aria-expanded="false" aria-controls="collapseDate4">
+                        /api/ip Endpoint
+                    </button>
+                </h2>
+                <div id="collapseDate4" class="accordion-collapse collapse" aria-labelledby="headingDate4" data-bs-parent="#apiAccordion4">
+                    <div class="accordion-body">
+                        <p>
+                            The <code>/api/ip</code> endpoint returns your IP address. Here's what you can expect:
+                        </p>
+                        <ul>
+                            <li><code>200:</code> Successfully retrieved your IP.</li>
+                            <li><code>500:</code> Failed to retrieve your IP.</li>
+                            <li><code>429:</code> Too many requests (rate-limited).</li>
+                        </ul>
+    
+                        <p>Try it out in your browser or using a tool like Postman!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <br>
+    
+        <div class="accordion" id="apiAccordion5">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDate5">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate5" aria-expanded="false" aria-controls="collapseDate5">
+                        /api/ua Endpoint
+                    </button>
+                </h2>
+                <div id="collapseDate5" class="accordion-collapse collapse" aria-labelledby="headingDate5" data-bs-parent="#apiAccordion5">
+                    <div class="accordion-body">
+                        <p>
+                            The <code>/api/ip</code> endpoint returns your User Agent (ua). Here's what you can expect:
+                        </p>
+                        <ul>
+                            <li><code>200:</code> Successfully retrieved your UA.</li>
+                            <li><code>400:</code> Failed to retrieve your UA (probably no header "user-agent").</li>
+                            <li><code>429:</code> Too many requests (rate-limited).</li>
+                        </ul>
+    
+                        <p>Try it out in your browser or using a tool like Postman!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <br>
+    
+        <div class="accordion" id="apiAccordion6">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingDate6">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate6" aria-expanded="false" aria-controls="collapseDate6">
+                        /api/lang Endpoint
+                    </button>
+                </h2>
+                <div id="collapseDate6" class="accordion-collapse collapse" aria-labelledby="headingDate6" data-bs-parent="#apiAccordion6">
+                    <div class="accordion-body">
+                        <p>
+                            The <code>/api/lang</code> endpoint returns your Accept Lang (header). Here's what you can expect:
+                        </p>
+                        <ul>
+                            <li><code>200:</code> Successfully retrieved Accept-lang</li>
+                            <li><code>400:</code> Failed to retrieve your Accept-lang.</li>
+                            <li><code>429:</code> Too many requests (rate-limited).</li>
+                        </ul>
+    
+                        <p>Try it out in your browser or using a tool like Postman!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

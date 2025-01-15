@@ -1,0 +1,17 @@
+{
+  "name": "kkapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kkronggiscool",
+  "license": "ISC",
+  "description": "A simple API, with various different api endpoints. All returned in clean JSON.",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0"
+  }
+}
